@@ -13,14 +13,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.blue,
-        body: Container(
+        //backgroundColor: Colors.blue,
+        body: AspectRatio(
           //alignment: Alignment.center,
+          aspectRatio: 1 / 3,
           child: const Align(
               //alignment: Alignment.center,
               child: Text(
             'Hi flutter I am Akhtar Ali',
-            style: TextStyle(color: Colors.white, fontSize: 30),
+            style: TextStyle(color: Colors.black, fontSize: 30),
           )),
         ),
       ),
